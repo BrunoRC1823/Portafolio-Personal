@@ -1,0 +1,66 @@
+.home {
+    width: calc(100vw - 17px);
+    height: 100vh;
+    background: #27272798;
+}
+
+.canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #252934;
+    z-index: 0;
+}
+
+.home_text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--blanco);
+    z-index: 1;
+    opacity: 0;
+    animation: aparecer 0.5s 0.5s forwards;
+}
+
+.home_button {
+    font-size: 1.3rem;
+    font-weight: 300;
+    z-index: 1;
+    opacity: 0;
+    animation: aparecer 0.5s 1s forwards;
+}
+
+.home_button:hover {
+    border: 2px solid var(--color-primario);
+    background-color: var(--color-primario);
+
+}
+
+.home:nth-of-type(1) .button {
+    margin-bottom: 3rem;
+}
+
+.home_button .fa-sharp {
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+
+.home_button:hover .fa-sharp {
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: all 0.3s;
+    transform: rotate(90deg);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,33 @@
+.nav{
+    bottom: 0;
+    left: 0;
+    position: relative;
+    background: var(--color-nav);
+    border-bottom: 3px solid var(--color-primario);
+    height: 3rem;
+    width: 100%;
+    padding: 0 2rem;
+    z-index: 99;
+}
+.link_wrap {
+    background: none;
+    height: 50%;
+    overflow: visible;
+    position: initial;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.link_pagina{
+    color: var(--blanco);
+    margin: 0 2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+.link_pagina:hover{
+    transition: all 0.5s;
+    color: var(--color-secundario);
+}
+.activo{
+    color: var(--color-secundario);
+}

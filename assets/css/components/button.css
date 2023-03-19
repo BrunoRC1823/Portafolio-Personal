@@ -1,0 +1,9 @@
+.button {
+    border: 2px solid var(--blanco);
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    transition: all 0.5s;
+    color: var(--blanco);
+}
