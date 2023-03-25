@@ -9,5 +9,7 @@
     --color-texto: rgb(97, 97, 97);
     --color-bar-porcentaje:rgb(0, 161, 167);
     --seccion-bg:rgb(245, 245, 245);
-    --shadows-color:rgba(151, 151, 151, 0.396);
+    --color-terciario: rgb(37, 41, 52);
+    --color-input-contacto:rgb(30, 36, 44);
+    --color-icon:rgb(38, 47, 56);
 }

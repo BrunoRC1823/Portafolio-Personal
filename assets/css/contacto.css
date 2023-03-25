@@ -1,0 +1,47 @@
+.section_contacto{
+    background-color: var(--color-terciario);
+    color: var(--blanco);
+    padding: 0 0 4rem 0 ;
+    box-sizing: border-box;
+}
+.titulo_contacto{
+    color: var(--blanco);
+    border-bottom: 4px solid var(--blanco);
+    margin-bottom: 2.5rem;
+}
+.contacto_text{
+    color: var(--color-bar-porcentaje);
+    font-size: 1.6;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+.form_contacto{
+    width: 100%;
+    padding: 0 28rem;
+    box-sizing: border-box;
+    display: block;
+}
+.input_contacto{
+    background-color: var(--color-input-contacto);
+    padding: 0.6rem 1rem ;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.textarea_contacto{
+    background-color: var(--color-input-contacto);
+    padding: 0.6rem 1rem ;
+    margin-bottom: 0.3rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 6rem;
+    margin-bottom: 0.4rem;
+    box-sizing: border-box;
+}
+.button_contacto{
+    float: right;
+}
+.button_contacto:hover {
+    border: 2px solid var(--color-primario);
+    background-color: var(--color-primario);
+}

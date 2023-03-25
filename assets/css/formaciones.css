@@ -1,7 +1,7 @@
 .section_formaciones{
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 10rem;
     box-sizing: border-box;
-    border-radius: 0 0 20px 20px;
+    
 }
 .formacion_container{
     padding: 2rem;
