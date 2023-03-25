@@ -1,0 +1,27 @@
+.section_formaciones{
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+}
+.formacion_container{
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.formacion_card{
+    width: 33%;
+}
+.formacion_content{
+    background-color: var(--seccion-bg);
+    width: 95%;
+    color: var(--color-texto);
+    border-radius: 10px;
+    padding: 1rem 0 ;
+    box-sizing: border-box;
+}
+.formacion_img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}

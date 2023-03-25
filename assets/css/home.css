@@ -1,6 +1,6 @@
 .home {
-    width: calc(100vw - 17px);
-    height: 100vh;
+    height: calc(100vh + 53px);
+    position: relative;
     background: #27272798;
 }
 
@@ -35,7 +35,6 @@
 .home_button:hover {
     border: 2px solid var(--color-primario);
     background-color: var(--color-primario);
-
 }
 
 .home:nth-of-type(1) .button {
@@ -55,12 +54,3 @@
     transform: rotate(90deg);
 }
 
-@keyframes aparecer {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}

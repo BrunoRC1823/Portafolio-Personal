@@ -1,33 +1,53 @@
 .nav{
-    bottom: 0;
+    bottom:0;
     left: 0;
-    position: relative;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
     background: var(--color-nav);
     border-bottom: 3px solid var(--color-primario);
-    height: 3rem;
+    height: 50px;
     width: 100%;
     padding: 0 2rem;
+    box-sizing: border-box;
     z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+}
+.show{
+    transform: translateY(0%); /* Mover el nav hacia abajo */
+    transition: all 1s ease-in-out;
+}
+.show .resaltador {
+    font-weight: 500 !important;
+}
+.logo{
+    color: var(--blanco);
+    font-weight: 500;
 }
 .link_wrap {
     background: none;
     height: 50%;
     overflow: visible;
     position: initial;
-    width: 100%;
+    width: 80%;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 .link_pagina{
     color: var(--blanco);
-    margin: 0 2rem;
+    margin: 0 2.5rem;
     font-weight: 300;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 .link_pagina:hover{
     transition: all 0.5s;
-    color: var(--color-secundario);
-}
-.activo{
     color: var(--color-secundario);
 }

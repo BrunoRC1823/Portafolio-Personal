@@ -9,21 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;300;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/base/base.css">
-    <link rel="stylesheet" href="assets/css/home.css"> 
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/components/button.css">
     <link rel="stylesheet" href="assets/css/components/nav.css">
+    <link rel="stylesheet" href="assets/css/sobre-mi.css">
+    <link rel="stylesheet" href="assets/css/components/bar.css">
+    <link rel="stylesheet" href="assets/css/proyectos.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/formaciones.css">
 </head>
 
 <body>
-    <section class="home flex">
+    <section class="home flex" id="home">
         <div class="canvas">
             <canvas>
             </canvas>
         </div>
-        <div class="flex">
+        <div class="flex" data-home-texto>
             <div class="home_text">
                 Hola, soy <span class="resaltador">Bruno Rios</span>.
                 <br>
@@ -32,18 +38,213 @@
             <div class="button home_button">
                 Ver Proyectos <i class="fa-sharp fa-solid fa-arrow-right"></i>
             </div>
+            <nav class="nav flex" data-nav>
+                <a class="logo">
+                    < <span class="resaltador">Bruno</span> Daniel <span class="resaltador">Rios</span> Cosser />
+                </a>
+                <ul class="link_wrap flex">
+                    <li class="link_pagina activo"><a href="#home">Home</a></li>
+                    <li class="link_pagina"><a href="#sobre-mi">Sobre mi</a></li>
+                    <li class="link_pagina"><a href="#">Proyectos</a></li>
+                    <li class="link_pagina"><a href="#">Certificados</a></li>
+                    <li class="link_pagina"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </section>
-    <div class="nav flex">
-        <ul class="link_wrap flex">
-            <li class="link_pagina activo">Home</li>
-            <li class="link_pagina">Sobre mi</li>
-            <li class="link_pagina">Proyectos</li>
-            <li class="link_pagina">Certificados</li>
-            <li class="link_pagina">Contacto</li>
-        </ul>
-    </div>
+
+    <section class="seccion_sobre-mi" id="sobre-mi">
+        <div class="sobre-mi_container flex">
+            <div>
+                <h1 class="titulo" data-animado>Sobre mi</h1>
+            </div>
+            <div class="soft-skills_container flex">
+                <div class="soft-skills">
+                    <div class="soft-skill_icon_container flex">
+                        <div class="hexagono flex" data-animado>
+                            <img alt="" class="soft-skill_icon" src="assets/icon/resposability-l.png">
+                        </div>
+                    </div>
+                    <div class="soft-skill_text_container" data-animado>
+                        <h2 class="soft-skill_text_titulo">Responsable</h2>
+                        <p class="soft-skill_text">
+                            Le doy tiempo de calidad y dedicación a mis objetivos principales.
+                        </p>
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <div class="soft-skill_icon_container flex">
+                        <div class="hexagono flex" data-animado>
+                            <img alt="Icono de trabajo en equipo" class="soft-skill_icon"
+                                src="assets/icon/team-work-l.png">
+                        </div>
+                    </div>
+                    <div class="soft-skill_text_container" data-animado>
+                        <h2 class="soft-skill_text_titulo">Trabajo en equipo</h2>
+                        <p class="soft-skill_text">
+                            Mi equipo y yo siempre subsanamos
+                            los problemas para lograr el objetivo.
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <div class="soft-skill_icon_container flex">
+                        <div class="hexagono flex" data-animado>
+                            <img alt="Icono de versatilidad" class="soft-skill_icon" src="assets/icon/versati-l.png">
+                        </div>
+                    </div>
+                    <div class="soft-skill_text_container" data-animado>
+                        <h2 class="soft-skill_text_titulo">Versátil</h2>
+                        <p class="soft-skill_text">
+                            Constantemente estoy pensando en distintas formas de logra mis objetivos.
+                        </p>
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <div class="soft-skill_icon_container flex">
+                        <div class="hexagono flex" data-animado>
+                            <img alt="Icono de Aprendizaje continuo" class="soft-skill_icon"
+                                src="assets/icon/lerning-l.png">
+                        </div>
+                    </div>
+                    <div class="soft-skill_text_container" data-animado>
+                        <h2 class="soft-skill_text_titulo">Aprendizaje continuo</h2>
+                        <p class="soft-skill_text">
+                            Me gusta aprender nuevas tecnologías y profundizar más en las que ya conozco.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sobre-mi_segundo-container flex">
+                <div class="quien-soy_container">
+                    <div class="foto"></div>
+                    <h2 class="quien-soy_titulo">Quien soy?</h2>
+                    <p class="quien-soy_contenido">Me llamo Bruno, soy un desarrollador web en proceso, soy de Perú y
+                        resido en
+                        la cuidad de lima.
+                        Desde muy pequeño me encanta la tecnología y la forma en la cambia lo que nos rodea, la vida,
+                        el trabajo, los estudios y como nos relacionamos.
+                        Mis pasatiempos son jugar video juegos, hablar con mis amigos/familia; y ver series, películas
+                        o animes.
+                    </p>
+                </div>
+                <div class="skills_container flex">
+                    <h2 class="skills_titulo">Skills</h2>
+                    <div class="skills_icon_container flex">
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><i class="fa-brands fa-html5"></i></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">70%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><i class="fa-brands fa-css3-alt"></i></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">60%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><i class="fa-brands fa-square-js"></i></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">35%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><i class="fa-brands fa-java"></i></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">45%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><i class="fa-brands fa-react"></i></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">60%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><i class="fa-brands fa-angular"></i></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">35%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><i class="fa-solid fa-database"></i></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">36%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="skills_icon flex"><img alt="" class="icon_spring-boot"
+                                    src="assets/icon/icons8-spring-boot-48.png"></div>
+                            <div class="bar_porcentaje"></div>
+                            <span class="porcentaje">49%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="proyecto_section flex">
+        <h1 class="titulo">Proyectos</h1>
+        <div class="galeria flex">
+            <div class="card flex">
+                <img class="card_img" alt="Imagen de Alura Geek" src="assets/img/alura-geek.jpg">
+                <div class="card_contenido_container">
+                    <div class="card_text_container">
+                        <h2 class="card_titulo">Alura Geek</h2>
+                        <br>
+                        <p><span class="resaltador">HTML / CSS / JAVASCRIPT</span></p>
+                    </div>
+                    <div class="card_button_container">
+                        <button class="card_button button">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex">
+                <img class="card_img" alt="Imagen Encriptador Texto" src="assets/img/encriptador-texto.jpg">
+                <div class="card_contenido_container">
+                    <div class="card_text_container">
+                        <h2 class="card_titulo">Encriptador de Texto</h2>
+                        <br>
+                        <p><span class="resaltador">HTML / CSS / JAVASCRIPT</span></p>
+                    </div>
+                    <div class="card_button_container">
+                        <button class="card_button button">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex">
+                <img class="card_img" src="assets/img/lista_tareas.jpg">
+                <div class="card_contenido_container">
+                    <div class="card_text_container">
+                        <h2 class="card_titulo">Lista de Tareas</h2>
+                        <br>
+                        <p><span class="resaltador">HTML / CSS / JAVASCRIPT</span></p>
+                    </div>
+                    <div class="card_button_container">
+                        <button class="card_button button">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_formaciones flex">
+        <h1 class="titulo">Formaciones</h1>
+        <div class="formacion_container flex row">
+            <div class="formacion_card flex">
+                <a class="formacion_content flex">
+                    <img src="assets/img/cibertec-logo.png" alt="Logo Cibertec" class="formacion_img">
+                    <h4>Cibertec: 2019 - 2023</h4>
+                </a>
+            </div>
+            <div class="formacion_card flex">
+                <a class="formacion_content flex">
+                    <img src="assets/img/Udemy-logo.png" alt="Logo Udemy" class="formacion_img">
+                    <h4>Udemy: 2022 - Actualidad</h4>
+                </a>
+            </div>
+            <div class="formacion_card flex">
+                <a class="formacion_content flex">
+                    <img src="assets/img/alura-logo.png" alt="Logo Alura Latam" class="formacion_img"> 
+                    <h4>Alura Latam: 2022 - Actualidad</h4>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="https://kit.fontawesome.com/8e9f63a036.js" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 
 </html>

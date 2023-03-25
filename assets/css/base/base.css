@@ -14,7 +14,53 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+.row{
+    flex-direction: row;
+}
 .resaltador{
     color: var(--color-secundario);
-    font-weight: 500;
+    font-weight: 500 ;
+}
+.activo{
+    color: var(--color-secundario) !important; 
+    font-weight: 500 !important;
+}
+.aparecer{
+    animation: aparecer 0.5s 1s forwards;
+}
+.none{
+    display: none;
+}
+.titulo{
+    color: var(--color-titulos);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid var(--color-titulos);
+    opacity: 0;
+    right: 100%;
+    position: relative;
+    animation: aparecer-Titulo 0.5s 0.5s forwards;
+}
+
+@keyframes aparecer-Titulo {
+    from {
+        right: 100%;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

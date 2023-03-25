@@ -1,7 +1,13 @@
 :root{
     --font-family: 'Raleway', sans-serif;
     --blanco: rgb(255, 255, 255);
+    --negro: rgb(0, 0, 0);
     --color-primario:rgb(4, 194, 201);
     --color-secundario: rgb(227, 27, 109);
     --color-nav:rgb(27, 36, 47);
+    --color-titulos: rgb(68, 70, 73);
+    --color-texto: rgb(97, 97, 97);
+    --color-bar-porcentaje:rgb(0, 161, 167);
+    --seccion-bg:rgb(245, 245, 245);
+    --shadows-color:rgba(151, 151, 151, 0.396);
 }

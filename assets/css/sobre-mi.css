@@ -1,0 +1,158 @@
+.sobre-mi_container{
+    width: 100%;
+    height: auto;
+    padding: 4rem 5rem;
+    box-sizing: border-box;
+}
+
+.soft-skills_container{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.soft-skills{
+    width: 20%;
+}
+.soft-skill_icon_container{
+    width: 100%;
+    margin-bottom: 2em;
+}
+.hexagono{
+    background-color: var(--color-primario);
+    width: 50%;
+    min-width: 50%;
+    height: 6.5rem;
+    clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
+    animation: aparecer-skill-icon  2s 0.5s forwards;
+    transform-style: preserve-3d;
+}
+.soft-skill_icon{
+    width: 100%;
+    height: 100%;
+    color: var(--blanco);
+}
+@keyframes aparecer-skill-icon {
+    from {
+        transform: rotateY(3600deg);
+    }
+    to {
+        transform: rotateY(-3600deg);
+    }
+}
+.soft-skills:first-of-type .soft-skill_icon {
+    margin-bottom: 0.3rem;
+    margin-right: 1px;
+}
+.soft-skills:nth-of-type(2) .soft-skill_icon {
+    margin-bottom: 0.2rem;
+}
+.soft-skills:nth-of-type(3) .soft-skill_icon {
+    margin-right: 1px;
+    margin-top: 1px;
+}
+.soft-skills:nth-of-type(4) .soft-skill_icon{
+    margin-right: 0.4rem;
+}
+.soft-skill_text_container{
+    color: var(--color-texto);
+    height: 50%;
+    text-align: center;
+}
+.soft-skill_text_titulo{
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 40%;
+    margin-bottom: 0.5rem;
+}
+.soft-skill_text{
+    font-size: 0.9rem;
+    font-weight: 500;
+    height: 60%;
+}
+.sobre-mi_segundo-container{
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 0;
+    box-sizing: border-box;
+}
+.quien-soy_container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    color: var(--color-texto);
+}
+.foto{
+    background: url('/assets/img/baby-yoda.jpg') no-repeat center/cover;
+    width: 18rem;
+    height: 16rem;
+    margin-top: 2rem;
+    clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
+}
+.quien-soy_titulo{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+}
+.skills_container{
+    width: 50%;
+    height: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.skills_titulo{
+    color: var(--color-titulos);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.skills_icon_container{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: normal;
+}
+.skills_icon{
+    background-color: var(--color-primario);
+    min-width: 65px;
+    height: 55px;
+    color: var(--blanco);
+    font-size: 2rem;
+    clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
+    box-sizing: border-box;
+}
+.bar:nth-of-type(4) .skills_icon > *{
+    margin-bottom: 0.3rem;
+}
+
+.icon_spring-boot{
+    width: 35px;
+}
+.bar:first-of-type .bar_porcentaje{
+    min-width: 70%;
+}
+.bar:nth-of-type(2) .bar_porcentaje {
+    min-width: 60%;
+}
+.bar:nth-of-type(3) .bar_porcentaje {
+    min-width: 35%;
+}
+.bar:nth-of-type(4) .bar_porcentaje {
+    min-width: 45%;
+}
+.bar:nth-of-type(5) .bar_porcentaje {
+    min-width: 60%;
+}
+.bar:nth-of-type(6) .bar_porcentaje {
+    min-width: 35%;
+}
+.bar:nth-of-type(7) .bar_porcentaje {
+    min-width: 36%;
+}
+.bar:nth-of-type(8) .bar_porcentaje {
+    min-width: 49%;
+}

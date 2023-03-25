@@ -1,0 +1,52 @@
+.card{
+    width: 390px;
+    min-height: 300px;
+    text-align: center;
+    justify-content: normal;
+    position: relative;
+    z-index: 3;
+    transition: all 0.5s;
+}
+.card_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s;
+}
+.card_contenido_container{
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    justify-content: normal;
+}
+.card_text_container{
+    margin-bottom: 4rem;
+}
+.card_titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.card_button_container{
+    width: 100%;
+    position: relative;
+    margin-top: 8rem;
+}
+.card_button{
+    color: var(--negro);
+    border: 2px solid var(--color-secundario);
+    width: 50%;
+}
+.card:hover .card_img{
+    opacity: 0;
+    visibility: hidden;
+}
+.card:hover .card_contenido_container{
+    visibility: visible;
+}
+.card_button:hover{
+    color: var(--blanco);
+    background-color: var(--color-secundario);
+}
