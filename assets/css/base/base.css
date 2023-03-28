@@ -19,7 +19,7 @@ body {
 }
 .resaltador{
     color: var(--color-secundario);
-    font-weight: 500 ;
+    font-weight: 500;
 }
 .activo{
     color: var(--color-secundario) !important; 
@@ -40,9 +40,7 @@ body {
     padding-bottom: 1.5rem;
     border-bottom: 4px solid var(--color-titulos);
     opacity: 0;
-    right: 100%;
     position: relative;
-    animation: aparecer-Titulo 0.5s 0.5s forwards;
 }
 input:focus {
     outline: none;
@@ -50,14 +48,31 @@ input:focus {
 textarea:focus{
     outline: none;
 }
-@keyframes aparecer-Titulo {
+.izquierda-medio{
+    right: 15%;
+    animation: aparecer-Titulo-i 0.5s forwards;
+}
+.derecha-medio{
+    left: 15%;
+    animation: aparecer-Titulo-d 0.5s forwards;
+}
+@keyframes aparecer-Titulo-i {
     from {
-        right: 100%;
         opacity: 0;
     }
     to {
-        right: 0;
         opacity: 1;
+        right: 0;
+        
+    }
+}
+@keyframes aparecer-Titulo-d {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        left: 0;
     }
 }
 @keyframes aparecer {

@@ -1,4 +1,4 @@
-.sobre-mi_container{
+.seccion_sobre-mi{
     width: 100%;
     height: auto;
     padding: 4rem 5rem;
@@ -23,9 +23,10 @@
     min-width: 50%;
     height: 6.5rem;
     clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
-    animation: aparecer-skill-icon  2s 0.5s forwards;
-    transform-style: preserve-3d;
+    opacity: 0;
+    transform: rotateY(90deg);
 }
+
 .soft-skill_icon{
     width: 100%;
     height: 100%;
@@ -33,10 +34,12 @@
 }
 @keyframes aparecer-skill-icon {
     from {
-        transform: rotateY(3600deg);
+        opacity: 0;
+        transform: rotateY(90deg);
     }
     to {
-        transform: rotateY(-3600deg);
+        opacity: 1;
+        transform: rotateY(180deg);
     }
 }
 .soft-skills:first-of-type .soft-skill_icon {
@@ -57,6 +60,7 @@
     color: var(--color-texto);
     height: 50%;
     text-align: center;
+    opacity: 0;
 }
 .soft-skill_text_titulo{
     font-size: 1.4rem;
@@ -86,6 +90,8 @@
     padding: 0 2rem;
     box-sizing: border-box;
     color: var(--color-texto);
+    position: relative;
+    opacity: 0;
 }
 .foto{
     background: url('/assets/img/baby-yoda.jpg') no-repeat center/cover;
@@ -104,6 +110,8 @@
     height: 100%;
     padding: 0 2rem;
     box-sizing: border-box;
+    position: relative;
+    opacity: 0;
 }
 .skills_titulo{
     color: var(--color-titulos);
@@ -132,27 +140,4 @@
 .icon_spring-boot{
     width: 35px;
 }
-.bar:first-of-type .bar_porcentaje{
-    min-width: 70%;
-}
-.bar:nth-of-type(2) .bar_porcentaje {
-    min-width: 60%;
-}
-.bar:nth-of-type(3) .bar_porcentaje {
-    min-width: 35%;
-}
-.bar:nth-of-type(4) .bar_porcentaje {
-    min-width: 45%;
-}
-.bar:nth-of-type(5) .bar_porcentaje {
-    min-width: 60%;
-}
-.bar:nth-of-type(6) .bar_porcentaje {
-    min-width: 35%;
-}
-.bar:nth-of-type(7) .bar_porcentaje {
-    min-width: 36%;
-}
-.bar:nth-of-type(8) .bar_porcentaje {
-    min-width: 49%;
-}
+

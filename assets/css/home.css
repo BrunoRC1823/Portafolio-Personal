@@ -20,16 +20,22 @@
     text-align: center;
     color: var(--blanco);
     z-index: 1;
-    opacity: 0;
-    animation: aparecer 0.5s 0.5s forwards;
 }
-
+.home_text > * {
+    opacity: 0;
+}
+.home_text p:first-child{
+    animation: aparecer 0.5s 0.3s forwards;
+}
+.home_text p:nth-child(2){
+    animation: aparecer 0.5s 0.6s forwards;
+}
 .home_button {
     font-size: 1.3rem;
-    font-weight: 300;
+    font-weight: 400;
     z-index: 1;
     opacity: 0;
-    animation: aparecer 0.5s 1s forwards;
+    animation: aparecer 0.5s 0.9s forwards;
 }
 
 .home_button:hover {
@@ -45,6 +51,7 @@
     margin-left: 5px;
     vertical-align: middle;
     transition: all 0.3s;
+    font-size: 1rem;
 }
 
 .home_button:hover .fa-sharp {

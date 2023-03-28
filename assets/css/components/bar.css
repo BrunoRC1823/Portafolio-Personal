@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .bar_porcentaje{
     background-color: var(--color-bar-porcentaje);
@@ -17,4 +17,12 @@
     padding: 0.4rem 1rem 0  0;
     box-sizing: border-box;
     text-align: end;
+}
+@keyframes llenarBarras {
+    from {
+        min-width:0%;
+    }
+    to{
+        min-width:var(--porcentaje-barra); 
+    }
 }

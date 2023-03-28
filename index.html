@@ -8,9 +8,11 @@
     <title>Mi Portafolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -33,17 +35,16 @@
         </div>
         <div class="flex" data-home-texto>
             <div class="home_text">
-                Hola, soy <span class="resaltador">Bruno Rios</span>.
-                <br>
-                Soy un programador web en desarrollo.
+                <p>Hola, soy <span class="resaltador">Bruno Rios</span>.</p>
+                <p>Soy un programador web en desarrollo.</p>
             </div>
-            <div class="button home_button">
+            <a href="#proyectos" class="button home_button">
                 Ver Proyectos <i class="fa-sharp fa-solid fa-arrow-right"></i>
-            </div>
+            </a>
             <nav class="nav flex" data-nav>
-                <a class="logo">
-                    < <span class="resaltador">Bruno</span> Daniel <span class="resaltador">Rios</span> Cosser />
-                </a>
+                <div class="logo flex" data-animado="logo_nav">
+                    < Bruno_Daniel_Rios_Cosser />
+                </div>
                 <ul class="link_wrap flex">
                     <li class="link_pagina activo"><a href="#home">Home</a></li>
                     <li class="link_pagina"><a href="#sobre-mi">Sobre mi</a></li>
@@ -55,19 +56,16 @@
         </div>
     </section>
 
-    <section class="seccion_sobre-mi" id="sobre-mi">
-        <div class="sobre-mi_container flex">
-            <div>
-                <h1 class="titulo" data-animado>Sobre mi</h1>
-            </div>
+    <section class="seccion_sobre-mi flex" id="sobre-mi">
+                <h1 class="titulo" data-animado="titulo">Sobre mi</h1>
             <div class="soft-skills_container flex">
                 <div class="soft-skills">
                     <div class="soft-skill_icon_container flex">
-                        <div class="hexagono flex" data-animado>
+                        <div class="hexagono flex" data-animado="hexagono">
                             <img alt="" class="soft-skill_icon" src="assets/icon/resposability-l.png">
                         </div>
                     </div>
-                    <div class="soft-skill_text_container" data-animado>
+                    <div class="soft-skill_text_container" data-animado="hexagono_text">
                         <h2 class="soft-skill_text_titulo">Responsable</h2>
                         <p class="soft-skill_text">
                             Le doy tiempo de calidad y dedicación a mis objetivos principales.
@@ -76,12 +74,12 @@
                 </div>
                 <div class="soft-skills">
                     <div class="soft-skill_icon_container flex">
-                        <div class="hexagono flex" data-animado>
+                        <div class="hexagono flex" data-animado="hexagono">
                             <img alt="Icono de trabajo en equipo" class="soft-skill_icon"
                                 src="assets/icon/team-work-l.png">
                         </div>
                     </div>
-                    <div class="soft-skill_text_container" data-animado>
+                    <div class="soft-skill_text_container" data-animado="hexagono_text">
                         <h2 class="soft-skill_text_titulo">Trabajo en equipo</h2>
                         <p class="soft-skill_text">
                             Mi equipo y yo siempre subsanamos
@@ -90,11 +88,11 @@
                 </div>
                 <div class="soft-skills">
                     <div class="soft-skill_icon_container flex">
-                        <div class="hexagono flex" data-animado>
+                        <div class="hexagono flex" data-animado="hexagono">
                             <img alt="Icono de versatilidad" class="soft-skill_icon" src="assets/icon/versati-l.png">
                         </div>
                     </div>
-                    <div class="soft-skill_text_container" data-animado>
+                    <div class="soft-skill_text_container" data-animado="hexagono_text">
                         <h2 class="soft-skill_text_titulo">Versátil</h2>
                         <p class="soft-skill_text">
                             Constantemente estoy pensando en distintas formas de logra mis objetivos.
@@ -103,12 +101,12 @@
                 </div>
                 <div class="soft-skills">
                     <div class="soft-skill_icon_container flex">
-                        <div class="hexagono flex" data-animado>
+                        <div class="hexagono flex" data-animado="hexagono">
                             <img alt="Icono de Aprendizaje continuo" class="soft-skill_icon"
                                 src="assets/icon/lerning-l.png">
                         </div>
                     </div>
-                    <div class="soft-skill_text_container" data-animado>
+                    <div class="soft-skill_text_container" data-animado="hexagono_text">
                         <h2 class="soft-skill_text_titulo">Aprendizaje continuo</h2>
                         <p class="soft-skill_text">
                             Me gusta aprender nuevas tecnologías y profundizar más en las que ya conozco.
@@ -116,8 +114,8 @@
                     </div>
                 </div>
             </div>
-            <div class="sobre-mi_segundo-container flex">
-                <div class="quien-soy_container">
+            <div class="sobre-mi_segundo-container flex" data-animado="quien-soy_container">
+                <div class="quien-soy_container" data-animado="quien-soy">
                     <div class="foto"></div>
                     <h2 class="quien-soy_titulo">Quien soy?</h2>
                     <p class="quien-soy_contenido">Me llamo Bruno, soy un desarrollador web en proceso, soy de Perú y
@@ -129,58 +127,57 @@
                         o animes.
                     </p>
                 </div>
-                <div class="skills_container flex">
+                <div class="skills_container flex" data-animado="mis-skills">
                     <h2 class="skills_titulo">Skills</h2>
                     <div class="skills_icon_container flex">
                         <div class="bar flex">
                             <div class="skills_icon flex"><i class="fa-brands fa-html5"></i></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">70%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">70%</span>
                         </div>
                         <div class="bar flex">
                             <div class="skills_icon flex"><i class="fa-brands fa-css3-alt"></i></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">60%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">60%</span>
                         </div>
                         <div class="bar flex">
                             <div class="skills_icon flex"><i class="fa-brands fa-square-js"></i></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">35%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">35%</span>
                         </div>
                         <div class="bar flex">
                             <div class="skills_icon flex"><i class="fa-brands fa-java"></i></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">45%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">45%</span>
                         </div>
                         <div class="bar flex">
                             <div class="skills_icon flex"><i class="fa-brands fa-react"></i></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">60%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">60%</span>
                         </div>
                         <div class="bar flex">
                             <div class="skills_icon flex"><i class="fa-brands fa-angular"></i></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">35%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">35%</span>
                         </div>
                         <div class="bar flex">
                             <div class="skills_icon flex"><i class="fa-solid fa-database"></i></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">36%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">36%</span>
                         </div>
                         <div class="bar flex">
                             <div class="skills_icon flex"><img alt="" class="icon_spring-boot"
                                     src="assets/icon/icons8-spring-boot-48.png"></div>
                             <div class="bar_porcentaje"></div>
-                            <span class="porcentaje">49%</span>
+                            <span class="porcentaje" data-animado="porcentaje_skills">49%</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="proyecto_section flex">
-        <h1 class="titulo">Proyectos</h1>
-        <div class="galeria flex">
+    <section class="proyecto_section flex" id="proyectos">
+        <h1 class="titulo" data-animado="titulo">Proyectos</h1>
+        <div class="galeria flex" data-animado="galeria">
             <div class="card flex">
                 <img class="card_img" alt="Imagen de Alura Geek" src="assets/img/alura-geek.jpg">
                 <div class="card_contenido_container">
@@ -222,8 +219,8 @@
             </div>
         </div>
     </section>
-    <section class="section_formaciones flex">
-        <h1 class="titulo">Formaciones</h1>
+    <section class="section_formaciones flex" id="formaciones">
+        <h1 class="titulo" data-animado="titulo">Formaciones</h1>
         <div class="formacion_container flex row">
             <div class="formacion_card flex">
                 <a class="formacion_content flex">
@@ -246,13 +243,13 @@
         </div>
     </section>
 
-    <section class="section_contacto flex">
+    <section class="section_contacto flex" id="contacto">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
             <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
         </svg>
-        <h1 class="titulo_contacto titulo">Contacto</h1>
-        <p class="contacto_text">Quieres comunicarte conmigo?</p>
-        <form class="form_contacto">
+        <h1 class="titulo_contacto titulo" data-animado="titulo">Contacto</h1>
+        <p class="contacto_text" data-animado="contacto_text">Quieres comunicarte conmigo?</p>
+        <form class="form_contacto" data-animado="contacto_form">
             <input class="input_contacto" placeholder="Nombre">
             <input class="input_contacto" placeholder="Correo">
             <textarea class="textarea_contacto" placeholder="Mensaje"></textarea>
