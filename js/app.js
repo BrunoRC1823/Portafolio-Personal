@@ -78,7 +78,18 @@ const mostrarHexagonos = () => {
         };
     });
 }
-
+const llenarBarras = () => {
+    const animacionBar = document.querySelectorAll("[data-animado='porcentaje_skills']");
+    let seg = 0;
+    animacionBar.forEach((bar, index) => {
+            seg += 0.1
+            const barPorcentaje  = document.querySelector(`.bar:nth-of-type(${index + 1}) .bar_porcentaje`);
+            const porcentajeBarra = bar.textContent.trim();
+            barPorcentaje.style.animation = `llenarBarras 0.5s forwards`;
+            barPorcentaje.style.setProperty('--porcentaje-barra', `${porcentajeBarra}`);
+            barPorcentaje.style.animationDelay = `${seg}s`;
+    });
+};
 const mostrarQuienSoyContainer = () => {
     let [pos, size] = '';
     const animacionQuienSoy = document.querySelector("[data-animado='quien-soy']");
@@ -86,30 +97,20 @@ const mostrarQuienSoyContainer = () => {
     [pos, size] = posicionObj(animacionQuienSoy, 1.3);
     if (pos < size) {
         animacionQuienSoy.classList.add("izquierda-medio");
+        animacionQuienSoy.style.animationDelay = `0.5s`;
+        setTimeout(() => {
+            llenarBarras();
+        }, 800);
     };
     [pos, size] = posicionObj(animacionMisSkills, 1.5);
     if (pos < size) {
         animacionMisSkills.classList.add("derecha-medio");
+        animacionMisSkills.style.animationDelay = `0.5s`;
     };
 };
-const llenarBarras = () => {
-    const animacionBar = document.querySelectorAll("[data-animado='porcentaje_skills']");
-    let seg = 0
-    animacionBar.forEach((bar, index) => {
-        const [pos, size] = posicionObj(bar, 1);
-        console.log(bar);
-        if (pos < size) {
-            seg += 0.2
-            const barPorcentaje  = document.querySelector(`.bar:nth-of-type(${index + 1}) .bar_porcentaje`);
-            const porcentajeBarra = bar.textContent.trim();
-            barPorcentaje.style.animation = `llenarBarras 0.5s forwards`;
-            barPorcentaje.style.setProperty('--porcentaje-barra', `${porcentajeBarra}`);
-            barPorcentaje.style.animationDelay = `${seg}s`;
-        };
-    });
-};
 
-window.addEventListener("scroll", function () {
+
+window.addEventListener("scroll", () =>  {
     const animaciones = document.querySelectorAll("[data-animado]");
     animaciones.forEach((animacion) => {
         const [pos, size] = posicionObj(animacion, 1)
@@ -124,9 +125,7 @@ window.addEventListener("scroll", function () {
                     mostrarHexagonos();
                 case "quien-soy_container":
                     mostrarQuienSoyContainer();
-                    llenarBarras();
             }
         }
     });
-
 });

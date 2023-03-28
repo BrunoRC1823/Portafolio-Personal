@@ -94,7 +94,7 @@
     opacity: 0;
 }
 .foto{
-    background: url('/assets/img/baby-yoda.jpg') no-repeat center/cover;
+    background: url('../img/baby-yoda.jpg') no-repeat center/cover;
     width: 18rem;
     height: 16rem;
     margin-top: 2rem;
