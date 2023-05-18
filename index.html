@@ -16,6 +16,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;300;400;500;700;800&display=swap"
         rel="stylesheet">
     <script src="js/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/components/button.css">
@@ -27,10 +31,52 @@
     <link rel="stylesheet" href="assets/css/formaciones.css">
     <link rel="stylesheet" href="assets/css/contacto.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-
+    <link rel="stylesheet" href="assets/css/components/modal.css">
+    <link rel="stylesheet" href="assets/css/components/slider.css">
 </head>
 
 <body>
+    <div class="modal_container flex" data-animado="modal-container">
+        <div class="modal flex" data-animado="modal">
+            <!--<img class="modal_img" src="assets/img/alura-geek.jpg" alt="">-->
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list"data-slider-items>
+                        <li class="splide__slide" data-slider-item></li>
+                        <li class="splide__slide" data-slider-item></li>
+                        <li class="splide__slide" data-slider-item></li>
+                    </ul>
+                </div>
+
+                <!-- Add the progress bar element -->
+                <div class="my-slider-progress">
+                    <div class="my-slider-progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="modal_content">
+                <div class="modal_titulo-container">
+                    <h2 class="modal_titulo" data-modal="titulo"></h2>
+                    <h4 class="modal_sub-titulo" data-modal="subTitulo"></h4>
+                </div>
+                <div class="modal_text-container">
+                    <p class="modal_descripcion" data-modal="descripcion">
+                    </p>
+                </div>
+                <div class="modal_button-container flex">
+                    <div class="modal_buttons">
+                        <a class="button modal_button" href="" target="_blank" data-modal="link">
+                            <i class="fa-brands fa-github modal_git"></i>
+                            Ver Repositorio</a>
+                        <a class="button modal_button " href="" target="_blank" data-modal="link">
+                            <i class="fa-solid fa-arrow-up-right-from-square modal_open"></i>
+                            Ver Demo</a>
+                    </div>
+                    <i class="fa-solid fa-xmark modal_close" data-cerrar-modal></i>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="home flex" id="home">
         <div class="canvas">
             <canvas>
@@ -181,45 +227,7 @@
     <section class="proyecto_section flex" id="proyectos">
         <h1 class="titulo" data-animado="titulo">Proyectos</h1>
         <div class="galeria flex" data-animado="galeria">
-            <div class="card flex" data-animado="card">
-                <img class="card_img" alt="Imagen de Alura Geek" src="assets/img/alura-geek.jpg">
-                <div class="card_contenido_container flex">
-                    <div class="card_text_container">
-                        <h2 class="card_titulo">Alura Geek</h2>
-                        <br>
-                        <p><span class="resaltador">HTML / CSS / JAVASCRIPT</span></p>
-                    </div>
-                    <div class="card_button_container">
-                        <button class="card_button button">Ver más</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card flex" data-animado="card">
-                <img class="card_img" alt="Imagen Encriptador Texto" src="assets/img/encriptador-texto.jpg">
-                <div class="card_contenido_container flex">
-                    <div class="card_text_container">
-                        <h2 class="card_titulo">Encriptador de Texto</h2>
-                        <br>
-                        <p><span class="resaltador">HTML / CSS / JAVASCRIPT</span></p>
-                    </div>
-                    <div class="card_button_container">
-                        <button class="card_button button">Ver más</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card flex" data-animado="card">
-                <img class="card_img" alt="Imagen Lista de tareas" src="assets/img/lista_tareas.jpg">
-                <div class="card_contenido_container flex">
-                    <div class="card_text_container">
-                        <h2 class="card_titulo">Lista de Tareas</h2>
-                        <br>
-                        <p><span class="resaltador">HTML / CSS / JAVASCRIPT</span></p>
-                    </div>
-                    <div class="card_button_container">
-                        <button class="card_button button">Ver más</button>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
     <section class="section_formaciones flex" id="formaciones">
@@ -272,6 +280,7 @@
 
 </body>
 <script src="https://kit.fontawesome.com/8e9f63a036.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="js/app.js"></script>
 
 </html>

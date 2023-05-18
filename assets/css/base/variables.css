@@ -6,6 +6,7 @@
     --color-secundario: rgb(227, 27, 109);
     --color-nav:rgb(27, 36, 47);
     --color-titulos: rgb(68, 70, 73);
+    --color-sub-titulos:rgb(192, 192, 192);
     --color-texto: rgb(97, 97, 97);
     --color-bar-porcentaje:rgb(0, 161, 167);
     --seccion-bg:rgb(245, 245, 245);
@@ -13,4 +14,6 @@
     --color-input-contacto:rgb(30, 36, 44);
     --color-icon:rgb(38, 47, 56);
     --porcentaje-barra : 0%;
+    --modal-container-fondo: rgba(0, 0, 0, 0.500);
+    --shadows-color:rgba(19, 19, 19, 0.507);
 }

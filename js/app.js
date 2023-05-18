@@ -1,5 +1,5 @@
 //Animacion para el nav
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
     const nav = document.querySelector("[data-nav]");
     const home = document.querySelector("#home");
     const total = home.offsetTop + home.offsetHeight;
@@ -13,6 +13,95 @@ window.addEventListener("scroll", function () {
         nav.classList.remove('fixed', 'show');
     }
 });
+//proyectos
+const proyectos = [
+    {
+        imgs: ["assets/img/alura-geek.jpg", "assets/img/aluraG1.png", "assets/img/aluraG2.png", "assets/img/aluraG3.png"],
+        titulo: "Alura-Geek",
+        subTitulo: "Pagina de venta de productos Geek",
+        descripcion: "Alura-Geek es una pagina de venta y compra de productos de colección, este proyecto fue parte del Challenge nro2 de la formacion de Alura Latam.",
+        tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+        links: ["https://github.com/BrunoRC1823/Alura-Geek", "https://brunorc1823.github.io/Alura-Geek/"]
+    },
+    {
+        imgs: ["assets/img/encriptador-texto.jpg", "assets/img/encriptadorT1.png", "assets/img/encriptadorT2.png", "assets/img/encriptadorT3.png"],
+        titulo: "Encriptador de texto",
+        subTitulo: "Proyecto que encripta y desencripta textos",
+        descripcion: "El encriptador de texto fue el primer challenge de la formacion de principiante de programacion de Alura Latam",
+        tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+        links: ["https://github.com/BrunoRC1823/Encriptador-texto", "https://brunorc1823.github.io/Encriptador-texto/"]
+    },
+    {
+        imgs: ["assets/img/lista_tareas.jpg", "assets/img/creadoLista1.png", "assets/img/creadoLista2.png", "assets/img/creadoLista3.png", "assets/img/aluraG4.png"],
+        titulo: "Lista de tareas",
+        subTitulo: "Creador de lista de tareas",
+        descripcion: "Es un pequeño proyecto que realice en mis primeras etapas de formacion como programador",
+        tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+        links: ["https://github.com/BrunoRC1823/Creador-Lista-Tareas", "https://brunorc1823.github.io/Creador-Lista-Tareas/"]
+    },
+];
+const generarCards = (proyecto) => {
+    const { imgs, titulo, tecnologias } = proyecto
+    const galeria = document.querySelector("[data-animado='galeria']");
+    const tecnologiasString = tecnologias.join(" / ");
+    let contenido = `            
+    <div class="card flex" data-animado="card">
+    <img class="card_img" alt="Imagen de ${titulo}" src="${imgs[0]}">
+    <div class="card_contenido_container flex">
+        <div class="card_text_container">
+            <h2 class="card_titulo">${titulo}</h2>
+            <br>
+            <p><span class="resaltador">${tecnologiasString}</span></p>
+        </div>
+        <div class="card_button_container">
+            <button class="card_button button" data-abrir-modal>Ver más</button>
+        </div>
+    </div>
+</div>`
+    galeria.innerHTML += contenido;
+}
+proyectos.forEach((proyecto) => {
+    generarCards(proyecto);
+})
+//
+const enviarDatosModal = (datos) => {
+    const { imgs, titulo, subTitulo, descripcion, links } = datos
+    const items = document.querySelectorAll("[data-slider-item]")
+    items.forEach((item, index) => {
+        const contenido = `
+        <img class="img_slide" src="${imgs[index + 1]}" alt="slider imagen">
+        `
+        item.innerHTML += contenido;
+    });
+    const modalTitulo = document.querySelector("[data-modal='titulo']")
+    modalTitulo.textContent = titulo;
+    const modalSubTitulo = document.querySelector("[data-modal='subTitulo']")
+    modalSubTitulo.textContent = subTitulo;
+    const modalDescr = document.querySelector("[data-modal='descripcion']")
+    modalDescr.textContent = descripcion;
+    const modalLinks = document.querySelectorAll("[data-modal='link']")
+    modalLinks.forEach((link, index) => {
+        link.href = links[index]
+    });
+}
+const quitarDatos = () => {
+    const items = document.querySelectorAll("[data-slider-item]")
+    console.log(items)
+    items.forEach((item) => {
+        item.innerHTML = "";
+    });
+    console.log(items)
+    const modalTitulo = document.querySelector("[data-modal='titulo']")
+    modalTitulo.textContent = "";
+    const modalSubTitulo = document.querySelector("[data-modal='subTitulo']")
+    modalSubTitulo.textContent = "";
+    const modalDescr = document.querySelector("[data-modal='descripcion']")
+    modalDescr.textContent = "descripcion";
+    const modalLinks = document.querySelectorAll("[data-modal='link']")
+    modalLinks.forEach((link) => {
+        link.href = ""
+    });
+}
 //Animacion para el contenido de las cards del la seccion proyectos
 const ajustarContenidoCard = (card) => {
     const primerHijo = card.querySelector('.card_text_container');
@@ -39,7 +128,8 @@ cards.forEach((card) => {
         }
     });
 });
-//scrolleo suave
+
+//Scrolleo suave
 $(function () {
     var ir_a = $("[data-animado='scroll']");
     ir_a.on("click", function (event) {
@@ -65,38 +155,84 @@ $(function () {
         $(this).trigger("click");
     }
 });
-//activar nav link
+//Activar nav link
 const menuLink = document.querySelectorAll(".nav [data-animado='scroll']")
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         const id = entry.target.getAttribute("id");
-        console.log(id)
         const menuLink = document.querySelector(`.nav a[href ="#${id}"]`);
         if (entry.isIntersecting) {
             const menuActivo = document.querySelector(".nav a.activo");
-            console.log(menuActivo);
             menuActivo.classList.remove("activo");
             menuLink.classList.add("activo");
-            console.log(menuLink);
         }
     });
 }, { rootMargin: "-30% 0px -70% 0px" });
-menuLink.forEach(menuLink =>{
+menuLink.forEach(menuLink => {
     const hash = menuLink.getAttribute("href");
     const target = document.querySelector(hash);
-    if(target){
+    if (target) {
         observer.observe(target);
     }
 });
+//Slider
+var splide = new Splide('.splide');
+var bar = splide.root.querySelector('.my-slider-progress-bar');
+// Updates the bar width whenever the carousel moves:
+splide.on('mounted move', function () {
+    var end = splide.Components.Controller.getEnd() + 1;
+    var rate = Math.min((splide.index + 1) / end, 1);
+    bar.style.width = String(100 * rate) + '%';
+});
+splide.mount();
+const restablecerSlider = () => {
+    splide.go(0); // Restablecer el carrusel a la primera posición
+    var end = splide.Components.Controller.getEnd() + 1;
+    var rate = Math.min(1 / end, 1);
+    bar.style.width = String(100 * rate) + '%';
+    splide.index = 0; // Establecer el index del carrusel en 0
+}
+//Activar modal
+const botonesModal = document.querySelectorAll("[data-abrir-modal]");
+const cerrarModalBtn = document.querySelector("[data-cerrar-modal]");
+const modalContainer = document.querySelector("[data-animado='modal-container']");
+const modal = document.querySelector("[data-animado='modal']");
+
+botonesModal.forEach((botonModal, index) => {
+    botonModal.addEventListener("click", (event) => {
+        const proyecto = proyectos[index];
+        enviarDatosModal(proyecto)
+        event.preventDefault();
+        modalContainer.classList.add("modal_container--show");
+        modal.classList.add("aparecer--modal");
+    });
+});
+
+const cerrarModal = () => {
+    modal.classList.remove("aparecer--modal");
+    setTimeout(() => {
+        modalContainer.classList.remove("modal_container--show");
+        restablecerSlider();
+        quitarDatos();
+    }, 500);
+};
+cerrarModalBtn.addEventListener("click", cerrarModal);
+$(modalContainer).on('click', function (event) {
+    if (!$(event.target).closest("[data-animado='modal']").length) {
+        cerrarModal();
+        quitarDatos();
+    }
+});
+
 //Animaciones
 const posicionObj = (obj, ver) => {
     const positionObj = obj.getBoundingClientRect().top;
     const pantallaSize = window.innerHeight / ver;
     return [positionObj, pantallaSize];
 }
-let animacionEjecutada = false;
+let animacionLetrasEjecutada = false;
 const escribirLogo = () => {
-    if (!animacionEjecutada) {
+    if (!animacionLetrasEjecutada) {
         const logo = document.querySelector("[data-animado='logo_nav']");
         const logoText = logo.textContent.trim();
         const letrasLogo = logoText.split("");
@@ -115,7 +251,7 @@ const escribirLogo = () => {
             const delayLetras = document.querySelector(`.letrasLogo:nth-of-type(${index + 1})`);
             delayLetras.style.animationDelay = `${seg}s`;
         });
-        animacionEjecutada = true;
+        animacionLetrasEjecutada = true;
     }
 }
 

@@ -1,0 +1,25 @@
+.splide__pagination{
+    display: none;
+}
+.splide{
+    height: 67%;
+    
+}
+.splide__track{
+    height: 100%;
+}
+.my-slider-progress {
+    background: #ccc;
+}
+
+.my-slider-progress-bar {
+    background: var(--color-primario);
+    height: 4px;
+    transition: width 400ms ease;
+    width: 0;
+}
+.img_slide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
