@@ -8,11 +8,20 @@ window.addEventListener("scroll", () => {
         nav.classList.add('fixed')
         this.setTimeout(() => {
             nav.classList.add('show');
+            if (window.innerWidth <= 640) {
+                menu.style.boxShadow="0 2px 10px var(--color-primario)";
+            } 
         }, 50);
     } else {
         nav.classList.remove('fixed', 'show');
+        this.setTimeout(() => {
+            if (window.innerWidth > 640) {
+                menu.style.boxShadow="";
+            } 
+        }, 50);
     }
 });
+
 //proyectos
 const proyectos = [
     {
@@ -155,6 +164,19 @@ $(function () {
         $(this).trigger("click");
     }
 });
+//Activar menu burger
+const burgerButton = document.querySelector("[data-burger-button");
+const menu =  document.querySelector("[data-menu]");
+burgerButton.addEventListener("click", () => {
+    burgerButton.classList.toggle('activo');
+    menu.style.display = 'flex';
+    this.setTimeout(() => {
+        menu.classList.toggle('activo_nav_burger');
+    }, 100);
+    
+});
+//
+
 //Activar nav link
 const menuLink = document.querySelectorAll(".nav [data-animado='scroll']")
 const observer = new IntersectionObserver((entries) => {

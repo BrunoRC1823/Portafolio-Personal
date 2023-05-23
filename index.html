@@ -16,14 +16,14 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;300;400;500;700;800&display=swap"
         rel="stylesheet">
     <script src="js/jquery-3.6.4.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" 
-    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="url-to-cdn/splide.min.css">
 
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/components/button.css">
     <link rel="stylesheet" href="assets/css/components/nav.css">
+    <link rel="stylesheet" href="assets/css/components/burger-menu.css">
     <link rel="stylesheet" href="assets/css/sobre-mi.css">
     <link rel="stylesheet" href="assets/css/components/bar.css">
     <link rel="stylesheet" href="assets/css/proyectos.css">
@@ -41,7 +41,7 @@
             <!--<img class="modal_img" src="assets/img/alura-geek.jpg" alt="">-->
             <div class="splide">
                 <div class="splide__track">
-                    <ul class="splide__list"data-slider-items>
+                    <ul class="splide__list" data-slider-items>
                         <li class="splide__slide" data-slider-item></li>
                         <li class="splide__slide" data-slider-item></li>
                         <li class="splide__slide" data-slider-item></li>
@@ -85,16 +85,26 @@
         <div class="flex" data-home-texto>
             <div class="home_text">
                 <p>Hola, soy <span class="resaltador">Bruno Rios</span>.</p>
-                <p>Soy un programador web en desarrollo.</p>
+                <p>Soy programador junior full stack.</p>
             </div>
             <a href="#proyectos" class="button home_button" data-animado="scroll">
                 Ver Proyectos <i class="fa-sharp fa-solid fa-arrow-right"></i>
             </a>
+
             <nav class="nav flex" data-nav>
                 <div class="logo flex" data-animado="logo_nav">
                     < Bruno_Daniel_Rios_Cosser />
                 </div>
-                <ul class="link_wrap flex">
+                <button class="burger_menu" data-burger-button>
+                    <span class="l1"></span>
+                    <span class="l2"></span>
+                    <span class="l3"></span>
+                </button>
+
+                <ul class="link_wrap flex" data-menu>
+                    <svg width="260" height="15" class="corrector">
+                        <rect width="260" height="15" />
+                    </svg>
                     <li class="link_pagina"><a class="activo" href="#home" data-animado="scroll">Home</a></li>
                     <li class="link_pagina"><a href="#sobre-mi" data-animado="scroll">Sobre mi</a></li>
                     <li class="link_pagina"><a href="#proyectos" data-animado="scroll">Proyectos</a></li>
@@ -107,14 +117,14 @@
 
     <section class="seccion_sobre-mi flex" id="sobre-mi">
         <h1 class="titulo" data-animado="titulo">Sobre mi</h1>
-        <div class="soft-skills_container flex">
+        <div class="soft-skills_container flex">            
             <div class="soft-skills">
                 <div class="soft-skill_icon_container flex">
                     <div class="hexagono flex" data-animado="hexagono">
                         <img alt="" class="soft-skill_icon" src="assets/icon/resposability-l.png">
                     </div>
                 </div>
-                <div class="soft-skill_text_container" data-animado="hexagono_text">
+                <div class="soft-skill_text_container flex" data-animado="hexagono_text">
                     <h2 class="soft-skill_text_titulo">Responsable</h2>
                     <p class="soft-skill_text">
                         Le doy tiempo de calidad y dedicación a mis objetivos principales.
@@ -127,7 +137,7 @@
                         <img alt="Icono de trabajo en equipo" class="soft-skill_icon" src="assets/icon/team-work-l.png">
                     </div>
                 </div>
-                <div class="soft-skill_text_container" data-animado="hexagono_text">
+                <div class="soft-skill_text_container flex" data-animado="hexagono_text">
                     <h2 class="soft-skill_text_titulo">Trabajo en equipo</h2>
                     <p class="soft-skill_text">
                         Mi equipo y yo siempre subsanamos
@@ -140,7 +150,7 @@
                         <img alt="Icono de versatilidad" class="soft-skill_icon" src="assets/icon/versati-l.png">
                     </div>
                 </div>
-                <div class="soft-skill_text_container" data-animado="hexagono_text">
+                <div class="soft-skill_text_container flex" data-animado="hexagono_text">
                     <h2 class="soft-skill_text_titulo">Versátil</h2>
                     <p class="soft-skill_text">
                         Constantemente estoy pensando en distintas formas de logra mis objetivos.
@@ -154,7 +164,7 @@
                             src="assets/icon/lerning-l.png">
                     </div>
                 </div>
-                <div class="soft-skill_text_container" data-animado="hexagono_text">
+                <div class="soft-skill_text_container flex" data-animado="hexagono_text">
                     <h2 class="soft-skill_text_titulo">Aprendizaje continuo</h2>
                     <p class="soft-skill_text">
                         Me gusta aprender nuevas tecnologías y profundizar más en las que ya conozco.
@@ -227,7 +237,7 @@
     <section class="proyecto_section flex" id="proyectos">
         <h1 class="titulo" data-animado="titulo">Proyectos</h1>
         <div class="galeria flex" data-animado="galeria">
-            
+
         </div>
     </section>
     <section class="section_formaciones flex" id="formaciones">

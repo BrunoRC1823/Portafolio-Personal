@@ -13,6 +13,7 @@
     z-index: 97;
     opacity: 1;
     visibility: visible;
+    font-size: 1.1rem;
 }
 
 .fixed {
@@ -24,21 +25,22 @@
 .show {
     transform: translateY(0%);
     /* Mover el nav hacia abajo */
-    transition: all 0.8s ;
+    transition: all 0.8s;
     box-shadow: 0 0 10px 2px var(--color-primario);
 }
 
 .show .resaltador {
     font-weight: 500 !important;
 }
-.show .activo{
+
+.show .activo {
     font-weight: 800 !important;
 }
+
 .logo {
     color: var(--blanco);
     font-weight: 500;
     flex-direction: row;
-    font-size: 1.08rem;
     opacity: 0;
 }
 
@@ -63,18 +65,93 @@
     width: 80%;
     flex-direction: row;
     justify-content: flex-end;
+    transition: all 0.5s;
 }
 
 .link_pagina {
     color: var(--blanco);
-    margin: 0 2.5rem;
     font-weight: 300;
-    font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.5s;
+    margin-right: 1.5rem;
 }
 
 .link_pagina:hover {
     color: var(--color-secundario);
     text-shadow: 2px 2px 8px 1px var(--color-secundario) !important;
+}
+.corrector{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: -5%;
+}
+.corrector > rect{
+    width: 100%;
+    fill: var(--color-nav);
+}
+@media (min-width: 1550px) {
+    .nav {
+        height: 70px;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 955px) {
+    .logo {
+        display: none;
+    }
+
+    .link_wrap {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo {
+        display: flex;
+    }
+    .corrector{
+        display: flex;
+    }
+    .link_wrap {
+        background-color: var(--color-terciario);
+        backdrop-filter: blur(7px);
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 60%;
+        height: 0;
+        left: 37%;
+        top: 101%;
+        padding: 1.3rem 0;
+        gap: 1.3rem;
+        border-radius: 0 0 10px 10px;
+        border-bottom: 3px solid var(--color-primario);
+        border-left: 3px solid var(--color-primario);
+        border-right: 3px solid var(--color-primario);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.61), var(--color-terciario));
+        opacity: 0;
+    }
+    .activo_nav_burger{
+        opacity: 1;
+        height: 230px;
+    }
+    .nav {
+        height: 70px;
+        padding: 0 0.5rem;
+    }
+}
+@media (max-width: 380px) {
+    .logo {
+        display: none;
+    }
+    .link_wrap {
+        width: 98.3%;
+        left: 0%;
+    }
 }

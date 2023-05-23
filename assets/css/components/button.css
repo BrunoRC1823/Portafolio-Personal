@@ -1,9 +1,33 @@
 .button {
-    border: 2px solid var(--blanco);
-    box-sizing: inherit;
+    border: 3px solid var(--blanco);
     cursor: pointer;
-    display: inline-block;
-    padding: 0.7rem 1.4rem;
+    padding: 1rem 1.8rem;
     transition: all 0.5s;
     color: var(--blanco);
+    font-size: 1.7vw;
+}
+@media (max-width: 1440px) {
+    .button {
+        padding: 0.6rem 1.1rem;
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 970px) {
+    .button {
+        border: 2px solid var(--blanco);
+        font-size: 2.5vw;
+    }
+}
+@media (max-width: 480px) {
+    .button {
+        font-size: 3vw;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .button {
+        border: 1px solid var(--blanco);
+        font-size: 4.2vw;
+    }
 }

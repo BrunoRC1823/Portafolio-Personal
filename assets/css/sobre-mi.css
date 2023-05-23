@@ -1,75 +1,61 @@
 .seccion_sobre-mi{
     width: 100%;
     height: auto;
-    padding: 4rem 5rem;
+    padding: 4rem 10%;
     box-sizing: border-box;
 }
 
 .soft-skills_container{
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 3rem;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: auto;
 }
 .soft-skills{
-    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 23%;
+    height: auto;
 }
 .soft-skill_icon_container{
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 1rem;
+    height: auto;
 }
 .hexagono{
     background-color: var(--color-primario);
-    width: 50%;
-    min-width: 50%;
-    height: 6.5rem;
+    width: 110px;
+    height: 100px;
     clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
     opacity: 0;
     transform: rotateY(90deg);
 }
-
 .soft-skill_icon{
     width: 100%;
     height: 100%;
     color: var(--blanco);
-}
-@keyframes aparecer-skill-icon {
-    from {
-        opacity: 0;
-        transform: rotateY(90deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateY(180deg);
-    }
-}
-.soft-skills:first-of-type .soft-skill_icon {
-    margin-bottom: 0.3rem;
-    margin-right: 1px;
-}
-.soft-skills:nth-of-type(2) .soft-skill_icon {
-    margin-bottom: 0.2rem;
-}
-.soft-skills:nth-of-type(3) .soft-skill_icon {
-    margin-right: 1px;
-    margin-top: 1px;
-}
-.soft-skills:nth-of-type(4) .soft-skill_icon{
-    margin-right: 0.4rem;
+    aspect-ratio: 4/3;
+    object-fit: contain;
 }
 .soft-skill_text_container{
     color: var(--color-texto);
-    height: 50%;
+    height: auto;
     text-align: center;
     opacity: 0;
+    
 }
 .soft-skill_text_titulo{
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
     height: 40%;
-    margin-bottom: 0.5rem;
 }
 .soft-skill_text{
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 500;
     height: 60%;
 }
@@ -137,8 +123,153 @@
 .bar:nth-of-type(4) .skills_icon > *{
     margin-bottom: 0.3rem;
 }
-
+@keyframes aparecer-skill-icon {
+    from {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(180deg);
+    }
+}
 .icon_spring-boot{
     width: 35px;
 }
+@media (min-width: 1900px){
+    .hexagono{
+        width: 160px;
+        height: 150px;
+    }
+}
+@media (min-width: 1604px) and (max-width: 1900px) {
+    .hexagono{
+        width: 130px;
+        height: 120px;
+    }
+    .soft-skill_text_titulo {
+        font-size: 1.8rem;
+    }
+    .soft-skill_text{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1721px) {
+    .seccion_sobre-mi{
+        padding: 4rem 7%;
+    }
+    .hexagono{
+        width: 140px;
+        height: 130px;
+    }
+}
+@media (max-width: 1603px) {
+    .soft-skill_text_titulo {
+        font-size: 1.8rem;
+    }
+    .soft-skill_text{
+        font-size: 1.2rem;
+    }
+    .seccion_sobre-mi{
+        padding: 4rem 5%;
+    }
+}
+@media (max-width: 1526px) {
+    .hexagono{
+        width: 110px;
+        height: 100px;
+    }
+    .soft-skills_container{
+        padding: 0 1rem;
+    }
+    .soft-skill_text_titulo {
+        font-size: 1.5rem;
+    }
+    .soft-skill_text{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 1452px) {
 
+    .soft-skill_text_titulo {
+        font-size: 1.4rem;
+    }
+    .soft-skill_text{
+        font-size: 1rem;
+    }
+    .seccion_sobre-mi{
+        padding: 4rem 3%;
+    }
+    .soft-skills_container{
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 1292px) {
+    .seccion_sobre-mi{
+        padding: 4rem 3%;
+    }
+}
+@media (max-width: 1124px) {
+    .soft-skill_text_titulo {
+        font-size: 1.3rem;
+    }
+    .soft-skill_text{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1049px) {
+    .soft-skills{
+        width: 24%;
+    }
+    .skills_container {
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 960px) {
+    .soft-skills_container {
+        margin-bottom: 1.5rem;
+        padding: 0 3rem;
+    }
+    .soft-skills{
+        width: 48%;
+        margin-bottom: 3rem;
+    }
+    .soft-skill_text_titulo {
+        font-size: 1.2rem;
+    }
+    .soft-skill_text{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 639px) {
+    .soft-skills_container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 571px) {
+    .soft-skills{
+        width: 49%;
+    }
+    .soft-skill_text_titulo {
+        font-size: 1.1rem;
+    }
+    .soft-skill_text{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 424px) {
+    .soft-skills{
+        width: 100%;
+    }
+    .soft-skill_text_titulo {
+        font-size: 1.2rem;
+    }
+    .soft-skill_text{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 320px) {
+
+}
