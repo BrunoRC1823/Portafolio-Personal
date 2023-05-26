@@ -37,7 +37,7 @@
 }
 
 .card_titulo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
@@ -50,10 +50,12 @@
 
 .card_button {
     color: var(--negro);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     border: 2px solid var(--color-secundario);
-    width: 25%;
     transition: all 0.5s;
+    padding: 0 1.3rem;
+    line-height: 32px;
+    box-sizing: border-box;
 }
 
 .card:hover .card_img {
@@ -64,7 +66,7 @@
 .card_button:hover {
     color: var(--blanco);
     background-color: var(--color-secundario);
-    
+
 }
 
 .aparecer-card_text_container {
@@ -77,4 +79,22 @@
     opacity: 1;
     margin-bottom: 4.5rem;
     transition: all 0.5s;
+}
+
+@media (max-width:875px) {
+    .card {
+        width: calc(50vw - 12px);
+    }
+}
+
+@media (max-width:540px) {
+    .card {
+        width: calc(100vw - 12px);
+    }
+}
+
+@media (max-width:320px) {
+    .card {
+        width: 100vw;
+    }
 }

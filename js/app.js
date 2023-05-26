@@ -49,6 +49,30 @@ const proyectos = [
         tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
         links: ["https://github.com/BrunoRC1823/Creador-Lista-Tareas", "https://brunorc1823.github.io/Creador-Lista-Tareas/"]
     },
+    {
+        imgs: ["assets/img/lista_tareas.jpg", "assets/img/creadoLista1.png", "assets/img/creadoLista2.png", "assets/img/creadoLista3.png", "assets/img/aluraG4.png"],
+        titulo: "Lista de tareas",
+        subTitulo: "Creador de lista de tareas",
+        descripcion: "Es un pequeño proyecto que realice en mis primeras etapas de formacion como programador",
+        tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+        links: ["https://github.com/BrunoRC1823/Creador-Lista-Tareas", "https://brunorc1823.github.io/Creador-Lista-Tareas/"]
+    },
+    {
+        imgs: ["assets/img/lista_tareas.jpg", "assets/img/creadoLista1.png", "assets/img/creadoLista2.png", "assets/img/creadoLista3.png", "assets/img/aluraG4.png"],
+        titulo: "Lista de tareas",
+        subTitulo: "Creador de lista de tareas",
+        descripcion: "Es un pequeño proyecto que realice en mis primeras etapas de formacion como programador",
+        tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+        links: ["https://github.com/BrunoRC1823/Creador-Lista-Tareas", "https://brunorc1823.github.io/Creador-Lista-Tareas/"]
+    },
+    {
+        imgs: ["assets/img/lista_tareas.jpg", "assets/img/creadoLista1.png", "assets/img/creadoLista2.png", "assets/img/creadoLista3.png", "assets/img/aluraG4.png"],
+        titulo: "Lista de tareas",
+        subTitulo: "Creador de lista de tareas",
+        descripcion: "Es un pequeño proyecto que realice en mis primeras etapas de formacion como programador",
+        tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+        links: ["https://github.com/BrunoRC1823/Creador-Lista-Tareas", "https://brunorc1823.github.io/Creador-Lista-Tareas/"]
+    },
 ];
 const generarCards = (proyecto) => {
     const { imgs, titulo, tecnologias } = proyecto

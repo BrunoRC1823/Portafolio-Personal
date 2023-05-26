@@ -1,17 +1,28 @@
-.proyecto_section{
+.proyecto_section {
     height: auto;
     justify-content: normal;
     background-color: var(--seccion-bg);
     padding: 0 3rem 4rem;
     box-sizing: border-box;
 }
-.galeria{
+
+.galeria {
     width: 100%;
     height: auto;
     align-items: normal;
-    justify-content: normal;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1rem 2rem;
-    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+@media (max-width: 875px) {
+    .proyecto_section {
+        padding: 0;
+    }
+
+    .galeria {
+        padding: 0;
+    }
 }
