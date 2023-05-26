@@ -14,6 +14,7 @@ window.addEventListener("scroll", () => {
         }, 50);
     } else {
         nav.classList.remove('fixed', 'show');
+        menu.style.boxShadow="";
         this.setTimeout(() => {
             if (window.innerWidth > 640) {
                 menu.style.boxShadow="";

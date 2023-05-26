@@ -190,12 +190,6 @@ textarea:focus {
     }
 
 }
-@media (max-width: 970px) {
-
-}
-@media (max-width: 770px) {
-
-}
 
 @media (max-width: 540px) {
     .titulo {
@@ -207,7 +201,4 @@ textarea:focus {
     .titulo {
         font-size: 1.4rem;
     }
-}
-@media (max-width: 320px) {
-
 }
