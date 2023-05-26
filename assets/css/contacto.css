@@ -18,11 +18,12 @@
     margin-bottom: 2.5rem;
     opacity: 0;
     position: relative;
+    text-align: center;
 }
 
 .form_contacto {
     width: 100%;
-    padding: 0 25rem;
+    padding: 0 20%;
     box-sizing: border-box;
     display: block;
     opacity: 0;
@@ -51,11 +52,51 @@
 .button_contacto {
     font-size: 1.09rem;
     float: right;
-    width: 8rem;
+    margin-top: 0.5rem;
 }
 
 .button_contacto:hover {
     border: 2px solid var(--color-primario);
     background-color: var(--color-primario);
     box-shadow: 0 0 10px 1px var(--color-primario);
+}
+
+@media (min-width: 1920px) {
+    .contacto_text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    .contacto_text {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 750px) {
+    .contacto_text {
+        font-size: 1.2rem;
+    }
+    .form_contacto {
+        padding: 0 10%;
+    }
+}
+@media (max-width: 471px) {
+    .contacto_text {
+        font-size: 1rem;
+    }
+    .form_contacto {
+        width: 90%;
+        padding: 0;
+    }
+    .button_contacto {
+        font-size: 1rem;
+        line-height: 38px;
+        padding: 0 1.4rem;
+    }
+}
+@media (max-width: 350px) {
+    .button_contacto {
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
 }

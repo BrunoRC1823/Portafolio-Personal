@@ -7,13 +7,17 @@
     padding: 2rem;
     width: 100%;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 1rem;
 }
 .formacion_card{
-    width: 33%;
+    width: 360px;
+    min-width: 280px;
 }
 .formacion_content{
     background-color: var(--seccion-bg);
-    width: 95%;
+    width: 100%;
     color: var(--color-texto);
     border-radius: 10px;
     padding: 1rem 0 ;
@@ -24,4 +28,17 @@
     height: 6rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+}
+@media (max-width: 520px) {
+    .section_formaciones{
+        padding: 1rem 1rem 10rem;
+        box-sizing: border-box;
+        
+    }
+    .formacion_card{
+        width: 100vw;
+    }
+    .formacion_container {
+        padding: 0;
+    }
 }
