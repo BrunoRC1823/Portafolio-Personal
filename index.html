@@ -17,7 +17,7 @@
         rel="stylesheet">
     <script src="js/jquery-3.6.4.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+    <!-- <link rel="stylesheet" href="url-to-cdn/splide.min.css"> -->
 
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -47,8 +47,6 @@
                         <li class="splide__slide" data-slider-item></li>
                     </ul>
                 </div>
-
-                <!-- Add the progress bar element -->
                 <div class="my-slider-progress">
                     <div class="my-slider-progress-bar"></div>
                 </div>
@@ -65,12 +63,12 @@
                 </div>
                 <div class="modal_button-container flex">
                     <div class="modal_buttons flex">
-                    <a class="button modal_button" href="" target="_blank" data-modal="link">
-                        <i class="fa-brands fa-github modal_git"></i>
-                        Ver Repositorio</a>
-                    <a class="button modal_button " href="" target="_blank" data-modal="link">
-                        <i class="fa-solid fa-arrow-up-right-from-square modal_open"></i>
-                        Ver Demo</a>
+                        <a class="button modal_button" href="" target="_blank" data-modal="link">
+                            <i class="fa-brands fa-github modal_git"></i>
+                            Ver Repositorio</a>
+                        <a class="button modal_button " href="" target="_blank" data-modal="link">
+                            <i class="fa-solid fa-arrow-up-right-from-square modal_open"></i>
+                            Ver Demo</a>
                     </div>
                     <i class="fa-solid fa-xmark modal_close" data-cerrar-modal></i>
                 </div>
@@ -85,7 +83,7 @@
         <div class="flex" data-home-texto>
             <div class="home_text">
                 <p>Hola, soy <span class="resaltador">Bruno Rios</span>.</p>
-                <p>Soy programador junior full stack.</p>
+                <p>Soy programador web Junior.</p>
             </div>
             <a href="#proyectos" class="button home_button" data-animado="scroll">
                 Ver Proyectos <i class="fa-sharp fa-solid fa-arrow-right"></i>
@@ -174,9 +172,9 @@
         </div>
         <div class="sobre-mi_segundo-container flex" data-animado="quien-soy_container">
             <div class="quien-soy_container" data-animado="quien-soy">
-                <div class="foto"></div>
-                <h2 class="quien-soy_titulo">Quien soy?</h2>
-                <p class="quien-soy_contenido">Me llamo Bruno, soy un desarrollador web en proceso, soy de Perú y
+                <img class="foto" src="assets/img/MiFoto.webp" />
+                <h2 class="quien-soy_titulo">¿Quien soy?</h2>
+                <p class="quien-soy_contenido">Me llamo Bruno, soy un desarrollador web, soy de Perú y
                     resido en
                     la cuidad de lima.
                     Desde muy pequeño me encanta la tecnología y la forma en la cambia lo que nos rodea, la vida,
@@ -237,28 +235,27 @@
     <section class="proyecto_section flex" id="proyectos">
         <h1 class="titulo" data-animado="titulo">Proyectos</h1>
         <div class="galeria flex" data-animado="galeria">
-
         </div>
     </section>
     <section class="section_formaciones flex" id="formaciones">
         <h1 class="titulo" data-animado="titulo">Formaciones</h1>
         <div class="formacion_container flex row">
-            <div class="formacion_card flex">
+            <div class="formacion_card flex" data-animado="formaciones">
                 <a class="formacion_content flex">
-                    <img src="assets/img/cibertec-logo.png" alt="Logo Cibertec" class="formacion_img">
+                    <img src="assets/img/logos/cibertec-logo.png" alt="Logo Cibertec" class="formacion_img">
                     <h4>Cibertec: 2019 - 2023</h4>
                 </a>
             </div>
-            <div class="formacion_card flex">
+            <div class="formacion_card flex" data-animado="formaciones">
                 <a class="formacion_content flex">
-                    <img src="assets/img/Udemy-logo.png" alt="Logo Udemy" class="formacion_img">
+                    <img src="assets/img/logos/Udemy-logo.png" alt="Logo Udemy" class="formacion_img">
                     <h4>Udemy: 2022 - Actualidad</h4>
                 </a>
             </div>
-            <div class="formacion_card flex">
+            <div class="formacion_card flex" data-animado="formaciones">
                 <a class="formacion_content flex">
-                    <img src="assets/img/alura-logo.png" alt="Logo Alura Latam" class="formacion_img">
-                    <h4>Alura Latam: 2022 - Actualidad</h4>
+                    <img src="assets/img/logos/alura-logo.png" alt="Logo Alura Latam" class="formacion_img">
+                    <h4>Alura Latam: 2022 - 2023</h4>
                 </a>
             </div>
         </div>
@@ -291,6 +288,12 @@
 </body>
 <script src="https://kit.fontawesome.com/8e9f63a036.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script src="js/app.js"></script>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/nav.js"></script>
+<script type="module" src="js/sobre-mi.js"></script>
+<script type="module" src="js/projects.js"></script>
+<script type="module" src="js/formaciones.js"></script>
+<script type="module" src="js/contacto.js"></script>
+<script type="module" src="js/modal.js"></script>
 
 </html>

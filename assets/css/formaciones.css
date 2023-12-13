@@ -14,6 +14,8 @@
 .formacion_card{
     width: 360px;
     min-width: 280px;
+    transition: all 0.5s;
+    opacity: 0;
 }
 .formacion_content{
     background-color: var(--seccion-bg);

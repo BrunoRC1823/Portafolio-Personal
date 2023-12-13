@@ -24,7 +24,6 @@
 
 .show {
     transform: translateY(0%);
-    /* Mover el nav hacia abajo */
     transition: all 0.8s;
     box-shadow: 0 0 10px 2px var(--color-primario);
 }

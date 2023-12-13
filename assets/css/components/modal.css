@@ -71,7 +71,7 @@
 .modal_button-container {
     justify-content: space-between;
     flex-direction: row;
-
+    margin-bottom: 1rem;
 }
 .modal_buttons{
     flex-direction: row;
@@ -184,7 +184,7 @@
 @media (max-width:1205px) {
     .modal_content {
         padding:0 3rem;
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .modal_titulo {
         font-size: 1.8em;

@@ -2,203 +2,212 @@
 @import url(reset.css);
 
 html {
-    display: block;
-    --webkit-font-smoothing: antialiased;
+  display: block;
+  --webkit-font-smoothing: antialiased;
 }
 
 body {
-    background-color: var(--blanco);
-    font-family: var(--font-family);
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    display: block;
+  background-color: var(--blanco);
+  font-family: var(--font-family);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: block;
 }
 
 .flex {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .resaltador {
-    color: var(--color-secundario);
-    font-weight: 700;
+  color: var(--color-secundario);
+  font-weight: 700;
 }
 
 .activo {
-    color: var(--color-secundario) !important;
-    font-weight: 700;
+  color: var(--color-secundario) !important;
+  font-weight: 700;
 }
 
 .aparecer {
-    animation: aparecer 0.5s 1s forwards;
+  animation: aparecer 0.5s 1s forwards;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 .titulo {
-    color: var(--color-titulos);
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-top: 5rem;
-    margin-bottom: 6rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 4px solid var(--color-titulos);
-    opacity: 0;
-    position: relative;
+  color: var(--color-titulos);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 4px solid var(--color-titulos);
+  opacity: 0;
+  position: relative;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 .izquierda-medio {
-    right: 15%;
-    animation: aparecer-Titulo-i 0.5s forwards;
+  right: 15%;
+  animation: aparecer-Titulo-i 0.5s forwards;
 }
 
 .derecha-medio {
-    left: 15%;
-    animation: aparecer-Titulo-d 0.5s forwards;
+  left: 15%;
+  animation: aparecer-Titulo-d 0.5s forwards;
 }
 
 @keyframes aparecer-Titulo-i {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-        right: 0;
-
-    }
+  to {
+    opacity: 1;
+    right: 0;
+  }
 }
 
 @keyframes aparecer-Titulo-d {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-        left: 0;
-    }
+  to {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 @keyframes aparecer {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes blur-in-expand {
-    0% {
-        transform: scale(0);
-        filter: blur(12px);
-        opacity: 0
-    }
+  0% {
+    transform: scale(0);
+    filter: blur(12px);
+    opacity: 0;
+  }
 
-    100% {
-        transform: scale(1);
-        filter: blur(0);
-        opacity: 1
-    }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 @keyframes scale-up-center {
-    0% {
-        opacity: 0;
-        transform: scale(.1)
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
 
-    80% {
-        opacity: 1;
-        transform: scale(1)
-    }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-    90% {
-        opacity: 1;
-        transform: scale(.9)
-    }
+  90% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
 
-    100% {
-        opacity: 1;
-        transform: scale(1)
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes slide-bottom {
-    0% {
-        transform: translateY(0)
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    20% {
-        transform: translateY(60px)
-    }
+  20% {
+    transform: translateY(60px);
+  }
 
-    40% {
-        transition: 0s;
-        transform: translateX(100px);
-    }
+  40% {
+    transition: 0s;
+    transform: translateX(100px);
+  }
 
-    80% {
-        transition: 0s;
-        transform: translateY(-60px);
-    }
+  80% {
+    transition: 0s;
+    transform: translateY(-60px);
+  }
 
-    100% {
-        transform: translateY(0)
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes aparecerLetrasLogo {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
 
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
+
+@keyframes animacionSubirFormaciones {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1550px) {
-    .titulo {
-        font-size: 2.9rem;
-    }
+  .titulo {
+    font-size: 2.9rem;
+  }
 }
 @media (max-width: 1390px) {
-    .titulo {
-        font-size: 2.4rem;
-    }
-
+  .titulo {
+    font-size: 2.4rem;
+  }
 }
 
 @media (max-width: 540px) {
-    .titulo {
-        font-size: 2rem;
-    }
+  .titulo {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 370px) {
-    .titulo {
-        font-size: 1.4rem;
-    }
+  .titulo {
+    font-size: 1.4rem;
+  }
 }
