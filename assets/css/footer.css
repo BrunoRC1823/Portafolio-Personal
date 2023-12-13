@@ -52,10 +52,8 @@
 }
 
 .footer_icon_container:hover .footer_icono {
-    animation: slide-bottom 0.4s linear both;
+    animation: slide-bottom 0.3s linear both;
 }
-
-
 
 .footer_text {
     color: var(--color-texto);

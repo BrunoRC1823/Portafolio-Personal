@@ -56,7 +56,7 @@
 }
 
 .button_contacto:hover {
-    border: 2px solid var(--color-primario);
+    border: 3px solid var(--color-primario);
     background-color: var(--color-primario);
     box-shadow: 0 0 10px 1px var(--color-primario);
 }

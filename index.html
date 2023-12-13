@@ -8,10 +8,6 @@
     <title>Mi Portafolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@100;300;400;500;700;800&display=swap"
         rel="stylesheet">
@@ -189,7 +185,7 @@
                     <div class="bar flex">
                         <div class="skills_icon flex" title="Html5"><i class="fa-brands fa-html5"></i></div>
                         <div class="bar_porcentaje"></div>
-                        <span class="porcentaje" data-animado="porcentaje_skills">70%</span>
+                        <span class="porcentaje" data-animado="porcentaje_skills">90%</span>
                     </div>
                     <div class="bar flex">
                         <div class="skills_icon flex" title="Css3"><i class="fa-brands fa-css3-alt"></i></div>
@@ -267,22 +263,29 @@
             <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
         </svg>
         <h1 class="titulo_contacto titulo" data-animado="titulo">Contacto</h1>
-        <p class="contacto_text" data-animado="titulo">Quieres ponerte en contacto conmigo?</p>
-        <form class="form_contacto" data-animado="contacto_form">
-            <input class="input_contacto" placeholder="Nombre">
-            <input class="input_contacto" placeholder="Correo">
-            <textarea class="textarea_contacto" placeholder="Mensaje"></textarea>
-            <button class="button_contacto button">Enviar</button>
+        <p class="contacto_text" data-animado="titulo">¿Quieres ponerte en contacto conmigo?</p>
+        <form class="form_contacto" data-animado="contacto_form"
+            action="https://formsubmit.co/bruno_rioscosser18_2314@hotmail.com" method="POST">
+            <input id="name_form" class="input_contacto" placeholder="Nombre" name="nombre" required>
+            <input id="email_form" class="input_contacto" placeholder="Correo" name="correo" required>
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://portafolio-personal-theta.vercel.app/thanks.html">
+            <textarea id="message_form" class="textarea_contacto" placeholder="Mensaje" name="mensaje"
+                required></textarea>
+            <button id="buttonContact" class="button_contacto button">Enviar</button>
         </form>
     </section>
     <footer class="footer flex">
         <a href="#home" class="footer_volver flex" data-animado="scroll"><i class="fa-solid fa-angles-right"></i></a>
         <div class="footer_container flex row">
-            <a href="#" class="footer_icon_container flex"><i class="fa-brands fa-linkedin footer_icono"></i></a>
-            <a href="#" class="footer_icon_container flex"><i class="fa-brands fa-github footer_icono"></i></a>
-            <a href="#" class="footer_icon_container flex"><i class="fa-solid fa-envelope footer_icono"></i></a>
+            <a href="http://www.linkedin.com/in/bruno-daniel-rios-cosser" target="_blank"
+                class="footer_icon_container flex"><i class="fa-brands fa-linkedin footer_icono"></i></a>
+            <a href="https://github.com/BrunoRC1823" class="footer_icon_container flex"><i
+                    class="fa-brands fa-github footer_icono"></i></a>
+            <a href="mailto:bruno_rioscosser18_2314@hotmail.com?subject='Contacto por portafolio'"
+                class="footer_icon_container flex"><i class="fa-solid fa-envelope footer_icono"></i></a>
         </div>
-        <p class="footer_text">Bruno Daniel Rios Cosser <span class="resaltador">©2023</span></p>
+        <p class="footer_text">Bruno Daniel Rios Cosser <span id="anio" class="resaltador">©</span></p>
     </footer>
 
 </body>

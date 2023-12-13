@@ -49,6 +49,8 @@ const mostrarTitulos = () => {
         }
     })
 }
+var year = new Date().getFullYear();
+document.getElementById("anio").textContent += year;
 
 window.addEventListener("scroll", () => {
     const animaciones = document.querySelectorAll("[data-animado]");
