@@ -8,6 +8,7 @@
 .porcentaje_container {
   position: relative;
   width: 100%;
+  margin-left: -1rem;
 }
 .bar_porcentaje {
   width: 0;
@@ -38,11 +39,25 @@
   position: absolute;
   z-index: 0;
 }
+
 @keyframes llenarBarras {
   from {
     width: 0%;
   }
   to {
     width: var(--porcentaje-barra);
+  }
+}
+
+@media (max-width: 1300px) {
+  .text-porcentaje {
+    left: 85%;
+  }
+}
+
+@media (max-width: 704px) {
+  .text-porcentaje {
+    top: 5px;
+    left: 78%;
   }
 }

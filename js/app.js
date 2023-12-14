@@ -81,6 +81,7 @@ window.addEventListener("scroll", () => {
                     aparecerFormContacto();
                     break;
             }
+            
         }
     });
 });
