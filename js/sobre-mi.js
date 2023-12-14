@@ -27,8 +27,8 @@ const llenarBarras = () => {
     let seg = 0;
     animacionBar.forEach((bar, index) => {
         seg += 0.1
+        const porcentajeBarra = bar.querySelector('.text-porcentaje').textContent.trim();
         const barPorcentaje = document.querySelector(`.bar:nth-of-type(${index + 1}) .bar_porcentaje`);
-        const porcentajeBarra = bar.textContent.trim();
         barPorcentaje.style.animation = `llenarBarras 0.5s forwards`;
         barPorcentaje.style.setProperty('--porcentaje-barra', `${porcentajeBarra}`);
         barPorcentaje.style.animationDelay = `${seg}s`;

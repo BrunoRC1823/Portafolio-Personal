@@ -1,430 +1,416 @@
 .seccion_sobre-mi {
-    width: 100%;
-    height: auto;
-    padding: 4rem 10%;
-    box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 4rem 10%;
+  box-sizing: border-box;
 }
 
 .soft-skills_container {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-    padding: 0 3rem;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    height: auto;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .soft-skills {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 23%;
-    height: auto;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 23%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .soft-skill_icon_container {
-    width: 100%;
-    margin-bottom: 1rem;
-    height: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+  height: auto;
 }
 
 .hexagono {
-    background-color: var(--color-primario);
-    width: 110px;
-    height: 100px;
-    clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
-    opacity: 0;
-    transform: rotateY(90deg);
+  background-color: var(--color-primario);
+  width: 110px;
+  height: 100px;
+  clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
+  opacity: 0;
+  transform: rotateY(90deg);
 }
 
 .soft-skill_icon {
-    width: 100%;
-    height: 100%;
-    color: var(--blanco);
-    aspect-ratio: 4/3;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  color: var(--blanco);
+  aspect-ratio: 4/3;
+  object-fit: contain;
 }
 
 .soft-skill_text_container {
-    color: var(--color-texto);
-    height: auto;
-    text-align: center;
-    opacity: 0;
-
+  color: var(--color-texto);
+  height: auto;
+  text-align: center;
+  opacity: 0;
 }
 
 .soft-skill_text_titulo {
-    font-size: 2rem;
-    font-weight: bold;
-    height: 40%;
-    margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 40%;
+  margin-bottom: 0.5rem;
 }
 
 .soft-skill_text {
-    font-size: 1.3rem;
-    font-weight: 500;
-    height: 60%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 60%;
 }
 
 .sobre-mi_segundo-container {
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 4rem 0;
-    box-sizing: border-box;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4rem 0;
+  box-sizing: border-box;
 }
 
 .quien-soy_container {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 2rem;
-    box-sizing: border-box;
-    color: var(--color-texto);
-    position: relative;
-    opacity: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  color: var(--color-texto);
+  position: relative;
+  opacity: 0;
 }
 
 .foto {
-    width: 350px;
-    height: 300px;
-    clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
+  width: 350px;
+  height: 300px;
+  clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
 }
 
 .quien-soy_titulo {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 2rem 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
 }
 
 .skills_container {
-    width: 50%;
-    padding: 0 2rem;
-    box-sizing: border-box;
-    position: relative;
-    opacity: 0;
+  width: 50%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0;
 }
 
 .skills_titulo {
-    color: var(--color-titulos);
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+  color: var(--color-titulos);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 .skills_icon_container {
-    width: 100%;
-    justify-content: flex-start;
-    align-items: normal;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: normal;
 }
 
 .skills_icon {
-    background-color: var(--color-primario);
-    min-width: 65px;
-    height: 55px;
-    color: var(--blanco);
-    font-size: 2rem;
-    clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
-    box-sizing: border-box;
+  background-color: var(--color-primario);
+  min-width: 65px;
+  height: 55px;
+  color: var(--blanco);
+  font-size: 2rem;
+  clip-path: polygon(100% 50%, 75% 0, 25% 0, 0 50%, 25% 100%, 75% 100%);
+  box-sizing: border-box;
 }
 
-.bar:nth-of-type(4) .skills_icon>* {
-    margin-bottom: 0.3rem;
-}
-
-@keyframes aparecer-skill-icon {
-    from {
-        opacity: 0;
-        transform: rotateY(90deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: rotateY(180deg);
-    }
+.bar:nth-of-type(4) .skills_icon > * {
+  margin-bottom: 0.3rem;
 }
 
 .icon_spring-boot {
-    width: 35px;
+  width: 35px;
 }
 
 @media (min-width: 1900px) {
-    .hexagono {
-        width: 160px;
-        height: 150px;
-    }
+  .hexagono {
+    width: 160px;
+    height: 150px;
+  }
 }
 
 @media (min-width: 1604px) and (max-width: 1900px) {
-    .hexagono {
-        width: 130px;
-        height: 120px;
-    }
+  .hexagono {
+    width: 130px;
+    height: 120px;
+  }
 
-    .soft-skill_text_titulo {
-        font-size: 1.8rem;
-    }
+  .soft-skill_text_titulo {
+    font-size: 1.8rem;
+  }
 
-    .soft-skill_text {
-        font-size: 1.2rem;
-    }
+  .soft-skill_text {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 1721px) {
-    .seccion_sobre-mi {
-        padding: 4rem 7%;
-    }
+  .seccion_sobre-mi {
+    padding: 4rem 7%;
+  }
 
-    .hexagono {
-        width: 140px;
-        height: 130px;
-    }
+  .hexagono {
+    width: 140px;
+    height: 130px;
+  }
 }
 
 @media (max-width: 1603px) {
-    .soft-skill_text_titulo {
-        font-size: 1.8rem;
-    }
+  .soft-skill_text_titulo {
+    font-size: 1.8rem;
+  }
 
-    .soft-skill_text {
-        font-size: 1.2rem;
-    }
+  .soft-skill_text {
+    font-size: 1.2rem;
+  }
 
-    .seccion_sobre-mi {
-        padding: 4rem 5%;
-    }
+  .seccion_sobre-mi {
+    padding: 4rem 5%;
+  }
 }
 
 @media (max-width: 1526px) {
-    .hexagono {
-        width: 110px;
-        height: 100px;
-    }
+  .hexagono {
+    width: 110px;
+    height: 100px;
+  }
 
-    .soft-skills_container {
-        padding: 0 1rem;
-    }
+  .soft-skills_container {
+    padding: 0 1rem;
+  }
 
-    .soft-skill_text_titulo {
-        font-size: 1.5rem;
-    }
+  .soft-skill_text_titulo {
+    font-size: 1.5rem;
+  }
 
-    .soft-skill_text {
-        font-size: 1.1rem;
-    }
+  .soft-skill_text {
+    font-size: 1.1rem;
+  }
 
-    .quien-soy_titulo {
-        font-size: 1.9rem;
-    }
+  .quien-soy_titulo {
+    font-size: 1.9rem;
+  }
 }
 
 @media (max-width: 1452px) {
+  .soft-skill_text_titulo {
+    font-size: 1.4rem;
+  }
 
-    .soft-skill_text_titulo {
-        font-size: 1.4rem;
-    }
+  .soft-skill_text {
+    font-size: 1rem;
+  }
 
-    .soft-skill_text {
-        font-size: 1rem;
-    }
+  .seccion_sobre-mi {
+    padding: 4rem 3%;
+  }
 
-    .seccion_sobre-mi {
-        padding: 4rem 3%;
-    }
+  .soft-skills_container {
+    padding: 0 2rem;
+  }
 
-    .soft-skills_container {
-        padding: 0 2rem;
-    }
+  .foto {
+    width: 300px;
+    height: 250px;
+  }
 
-    .foto {
-        width: 300px;
-        height: 250px;
-    }
+  .quien-soy_titulo {
+    font-size: 1.7rem;
+  }
 
-    .quien-soy_titulo {
-        font-size: 1.7rem;
-    }
+  .quien-soy_contenido {
+    font-size: 0.9rem;
+  }
 
-    .quien-soy_contenido {
-        font-size: 0.9rem;
-    }
-
-    .quien-soy_container {
-        padding: 0 5rem;
-    }
+  .quien-soy_container {
+    padding: 0 5rem;
+  }
 }
 
 @media (max-width: 1292px) {
-    .seccion_sobre-mi {
-        padding: 4rem 3%;
-    }
+  .seccion_sobre-mi {
+    padding: 4rem 3%;
+  }
 
-    .skills_container {
-        padding: 0 3rem;
-    }
+  .skills_container {
+    padding: 0 3rem;
+  }
 
-    .quien-soy_container {
-        padding: 0 3rem;
-    }
+  .quien-soy_container {
+    padding: 0 3rem;
+  }
 
-    .sobre-mi_segundo-container {
-        padding: 2rem 0;
-    }
+  .sobre-mi_segundo-container {
+    padding: 2rem 0;
+  }
 }
 
 @media (max-width: 1124px) {
-    .soft-skill_text_titulo {
-        font-size: 1.3rem;
-    }
+  .soft-skill_text_titulo {
+    font-size: 1.3rem;
+  }
 
-    .soft-skill_text {
-        font-size: 0.9rem;
-    }
+  .soft-skill_text {
+    font-size: 0.9rem;
+  }
 
-    .quien-soy_titulo {
-        font-size: 1.5rem;
-    }
+  .quien-soy_titulo {
+    font-size: 1.5rem;
+  }
 
-    .quien-soy_contenido {
-        font-size: 0.7rem;
-    }
+  .quien-soy_contenido {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 1049px) {
-    .soft-skills {
-        width: 24%;
-    }
+  .soft-skills {
+    width: 24%;
+  }
 }
 
 @media (max-width: 960px) {
-    .soft-skills_container {
-        margin-bottom: 1.5rem;
-        padding: 0 3rem;
-    }
+  .soft-skills_container {
+    margin-bottom: 1.5rem;
+    padding: 0 3rem;
+  }
 
-    .soft-skills {
-        width: 48%;
-        margin-bottom: 3rem;
-        padding: 0 2rem;
-    }
+  .soft-skills {
+    width: 48%;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+  }
 
-    .soft-skill_text_titulo {
-        font-size: 1.2rem;
-    }
+  .soft-skill_text_titulo {
+    font-size: 1.2rem;
+  }
 
-    .soft-skill_text {
-        font-size: 0.8rem;
-    }
+  .soft-skill_text {
+    font-size: 0.8rem;
+  }
 
-    .quien-soy_container {
-        width: 100%;
-        padding: 0 30%;
-    }
+  .quien-soy_container {
+    width: 100%;
+    padding: 0 30%;
+  }
 
-    .skills_container {
-        width: 100%;
-        padding: 0 20%;
-    }
+  .skills_container {
+    width: 100%;
+    padding: 0 20%;
+  }
 }
 
 @media (max-width: 639px) {
-    .soft-skills_container {
-        padding: 0 1rem;
-    }
+  .soft-skills_container {
+    padding: 0 1rem;
+  }
 
-    .soft-skills {
-        padding: 0 1rem;
-    }
+  .soft-skills {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 571px) {
-    .soft-skills {
-        width: 49%;
-    }
+  .soft-skills {
+    width: 49%;
+  }
 
-    .soft-skill_text_titulo {
-        font-size: 1.1rem;
-    }
+  .soft-skill_text_titulo {
+    font-size: 1.1rem;
+  }
 
-    .soft-skill_text {
-        font-size: 0.7rem;
-    }
+  .soft-skill_text {
+    font-size: 0.7rem;
+  }
 
-    .skills_container {
-        padding: 0 10%;
-    }
+  .skills_container {
+    padding: 0 10%;
+  }
 }
 
 @media (max-width: 424px) {
-    .soft-skills {
-        width: 100%;
-        padding: 0 3rem;
-    }
+  .soft-skills {
+    width: 100%;
+    padding: 0 3rem;
+  }
 
-    .soft-skill_text_titulo {
-        font-size: 1.2rem;
-    }
+  .soft-skill_text_titulo {
+    font-size: 1.2rem;
+  }
 
-    .soft-skill_text {
-        font-size: 0.8rem;
-    }
+  .soft-skill_text {
+    font-size: 0.8rem;
+  }
 
-    .foto {
-        width: 250px;
-        height: 200px;
-    }
+  .foto {
+    width: 250px;
+    height: 200px;
+  }
 
-    .quien-soy_container {
-        padding: 0 4rem;
-    }
+  .quien-soy_container {
+    padding: 0 4rem;
+  }
 }
 
 @media (max-width: 368px) {
-    .skills_icon {
-        min-width: 55px;
-        height: 45px;
-        font-size: 1.5rem;
-    }
+  .skills_icon {
+    min-width: 55px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
 
-    .bar_porcentaje {
-        height: 25px !important;
-    }
+  .bar_porcentaje {
+    height: 25px !important;
+  }
 
-    .porcentaje {
-        height: 25px !important;
-        padding: 0.2rem 1rem 0 0 !important;
-    }
+  .porcentaje {
+    height: 25px !important;
+    padding: 0.2rem 1rem 0 0 !important;
+  }
 
-    .skills_icon_container {
-        width: 90%;
-    }
+  .skills_icon_container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 280px) {
-    .skills_icon {
-        min-width: 45px;
-        height: 40px;
-        font-size: 1.3rem;
-    }
+  .skills_icon {
+    min-width: 45px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
 
-    .skills_icon_container {
-        width: 80%;
-    }
+  .skills_icon_container {
+    width: 80%;
+  }
 
-    .icon_spring-boot {
-        width: 25px;
-    }
+  .icon_spring-boot {
+    width: 25px;
+  }
 
-    .porcentaje {
-        padding: 0.3rem 1rem 0 0 !important;
-        font-size: 0.8rem;
-    }
+  .porcentaje {
+    padding: 0.3rem 1rem 0 0 !important;
+    font-size: 0.8rem;
+  }
 }
