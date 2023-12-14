@@ -5,7 +5,7 @@ const menu = document.querySelector("[data-menu]");
 burgerButton.addEventListener("click", () => {
     burgerButton.classList.toggle('activo');
     menu.style.display = 'flex';
-    this.setTimeout(() => {
+    setTimeout(() => {
         menu.classList.toggle('activo_nav_burger');
     }, 100);
 

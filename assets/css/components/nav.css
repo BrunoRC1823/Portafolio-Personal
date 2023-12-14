@@ -111,9 +111,7 @@
 }
 
 @media (max-width: 640px) {
-    .logo {
-        display: flex;
-    }
+
     .corrector{
         display: flex;
     }
