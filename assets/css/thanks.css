@@ -76,4 +76,7 @@
   .message_container {
     max-width: 70vw;
   }
+  .message_container {
+    gap: 0.8rem;
+  }
 }
