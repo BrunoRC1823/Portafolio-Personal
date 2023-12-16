@@ -34,6 +34,7 @@
 }
 
 .text-porcentaje {
+  color: var(--color-texto);
   top: 8px;
   left: 88%;
   position: absolute;

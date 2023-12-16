@@ -24,14 +24,14 @@
 
 .message_title {
   color: var(--blanco);
-  font-size: 6rem;
+  font-size: clamp(10px, 6vw, 100px);
   font-weight: bold;
 }
 
 .message_content {
   color: var(--color-sub-titulos);
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: clamp(10px, 1.5vw, 35px);
   line-height: 1.5;
 }
 
@@ -70,4 +70,10 @@
     var(--color-secundario),
     var(--color-primario)
   );
+}
+
+@media (max-width: 768px) {
+  .message_container {
+    max-width: 70vw;
+  }
 }
